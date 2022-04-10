@@ -37,7 +37,7 @@
 				h1::after {
 				  opacity: 1;
 				  width: 0.15em; 
-				  background: black;
+				  background: rgba(255,230,230);
 				  animation: write 2.5s steps(25) 0.5s forwards, blink 0.75s steps(2) infinite;
 				}
 
