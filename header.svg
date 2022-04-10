@@ -17,6 +17,7 @@
 				  position: relative;
 				  width: max-content; 
 				  font-weight: normal;
+				  color: rgb(32,194,14);
 				}
 
 				h1:before, h1:after {
