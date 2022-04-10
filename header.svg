@@ -2,81 +2,77 @@
 	<foreignObject width="100%" height="100%">
 		<div xmlns="http://www.w3.org/1999/xhtml">
 			<style>
-				@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-				*{
-				  margin: 0;
-				  padding: 0;
-				  box-sizing: border-box;
-				  font-family: 'Poppins', sans-serif;
+				body {
+				  display: grid;
+				  place-content: center;
+				  text-align: center;
+				  height: 100vh;
+				  font-family: Courier New, monospace;
+				  background: rgba(255,230,230);
+				  overflow-x: hidden;
 				}
-				body{
-				  display: flex;
-				  align-items: center;
-				  justify-content: center;
-				  min-height: 100vh;
-				  background: #343F4F;
-				}
-				.wrapper{
-				  display: flex;
-				}
-				.wrapper .static-txt{
-				  color: #fff;
-				  font-size: 60px;
-				  font-weight: 400;
-				}
-				.wrapper .dynamic-txts{
-				  margin-left: 15px;
-				  height: 90px;
-				  line-height: 90px;
-				  overflow: hidden;
-				}
-				.dynamic-txts li{
-				  list-style: none;
-				  color: #FC6D6D;
-				  font-size: 60px;
-				  font-weight: 500;
+
+				h1 {
+				  font-size: 3.5vw;
 				  position: relative;
-				  top: 0;
-				  animation: slide 12s steps(4) infinite;
+				  width: max-content; 
+				  font-weight: normal;
 				}
-				@keyframes slide {
-				  100%{
-				    top: -360px;
-				  }
-				}
-				.dynamic-txts li span{
-				  position: relative;
-				  margin: 5px 0;
-				  line-height: 90px;
-				}
-				.dynamic-txts li span::after{
+
+				h1:before, h1:after {
 				  content: "";
 				  position: absolute;
+				  top: 0;
 				  left: 0;
 				  height: 100%;
-				  width: 100%;
-				  background: #343F4F;
-				  border-left: 2px solid #FC6D6D;
-				  animation: typing 3s steps(10) infinite;
 				}
-				@keyframes typing {
-				  40%, 60%{
-				    left: calc(100% + 30px);
+
+				h1::before {
+				  background: rgba(255,230,230);
+				  animation: write 2.5s steps(25) 0.5s forwards; /* Number of steps */
+				  width: 100%;
+				}
+
+				h1::after {
+				  opacity: 1;
+				  width: 0.15em; 
+				  background: black;
+				  animation: write 2.5s steps(25) 0.5s forwards, blink 0.75s steps(2) infinite;
+				}
+
+				p {
+				  font-size: 2.5vw;
+				  opacity: 0.4;
+				}
+
+				.bold {
+				  font-weight: 600;
+				}
+
+				@keyframes write {
+				  to {
+				    left: 100%;
 				  }
-				  100%{
-				    left: 0;
+
+				}
+
+				@keyframes blink {
+				  0% {
+				    opacity: 0;
+				  } 
+				  49.9% {
+				     opacity: 0;
+				  }
+				  50% {
+				     opacity: 1;
+				  }
+				  100% {
+				     opacity: 1;
 				  }
 				}
 			</style>
-			<div class="wrapper">
-			  <div class="static-txt">I'm a</div>
-			  <ul class="dynamic-txts">
-			    <li><span>YouTuber</span></li>
-			    <li><span>Designer</span></li>
-			    <li><span>Developer</span></li>
-			    <li><span>Freelancer</span></li>
-			  </ul>
-			</div>
+			<h1>Hello, my name is <span class="bold">Evelin</span>.</h1>
+			<p>Welcome to my profile.</p>
 		</div>
 	</foreignObject>
 </svg>
