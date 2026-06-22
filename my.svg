@@ -37,7 +37,7 @@
 				  	margin: 0;
 				  	white-space: nowrap;
 				  	overflow: hidden;
-				  	animation: type 2s steps(20, end), cursor1 0.8s 4;
+				  	animation: type 1s steps(20, end), cursor1 0.8s 4;
 				  	border-right: 8px solid transparent;
 				  	animation-delay: 0;
 				  	transition: 0.2s;
