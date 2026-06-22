@@ -37,7 +37,7 @@
 				  	margin: 0;
 				  	white-space: nowrap;
 				  	overflow: hidden;
-				  	animation: type 0.5s steps(20, end), cursor1 0.8s 4;
+				  	animation: type 2s steps(20, end), cursor1 0.8s 4;
 				  	border-right: 8px solid transparent;
 				  	animation-delay: 0;
 				  	transition: 0.2s;
@@ -50,7 +50,7 @@
 				  	animation: type 2s steps(19, end), cursor 0.8s infinite;
 				  	border-right: 8px solid white;
 				  	animation-fill-mode: both;
-				  	animation-delay: 2s;
+				  	animation-delay: 3s;
 				}
 
 				.t1:active {
@@ -91,8 +91,8 @@
 				}
 			</style>
 			<div class="container">
-				<h1 class='text t1'>Hello!</h1>
-			  	<h1 class='text t2'>My name is <span class='textclass'>Elmer.</span></h1> 
+				<h1 class='text t1'>Hello! My name is <span class='textclass'>Elmer.</span></h1>
+			  	<h1 class='text t2'>Welcome to my Github Profile!</h1> 
 			</div>
 		</div>
 	</foreignObject>
